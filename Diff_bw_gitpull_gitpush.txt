@@ -1,0 +1,20 @@
+(c) What is the difference between git fetch and git pull? Write a scenario where you prefer fetch over pull. 
+
+Git pull:
+It is the combination of the git fetch and git merge.
+It will bring the chnages in the remote to local and make the merge kind of thing and those chnages will also be appears and modifies in local too
+
+Git fetch:
+It is for bringing the chnages in remote to local 
+but it doent do merge and it will not modify the local files and all
+It is like those fteched files will not be visible in editor , it will be stored in the .git in our system not exactly in the file we r working in local 
+
+Git fetch is preferred to do before doing the git pull because the git pull does the modifications too
+
+The git fetch is used to prevent the merge conflicts , such as like if I am working onnmy branch "feature/login-page" 
+and I dont have a stable files amd have some uncommited files too and other persons put some files in main and i wna that file to check to add those chnages in mt branch
+before doing the pull directly , we can fetch those new files and can ispect that file without modifying my actual working branch 
+if the fetched file is good and stable to add to my branch then we can continue with merge and all
+
+we can use git diff command to compare the fetched file with the files what I alredy have with me in my branch
+
